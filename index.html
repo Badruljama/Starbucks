@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+    <section class="bk">
+        <div class="circle"></div>
+            <head>
+                <div class="nav">
+                <img class="logo" src="./images/starbucks-logo.png" alt="">
+                <div class="toggle" onclick="toggleMenu();"></div>
+                <ul class="menu">
+                    <li class="grn">Home</li>
+                    <li>Menu</li>
+                    <li>What'New</li>
+                    <li>Contact</li>
+                </ul>
+                </div>
+            </head>
+            <div class="inform_sec">
+            <h2>It's not just Coffee<br> it's <span><b>Starkbucks</b></span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam maxime reiciendis laborum harum. Sunt natus minus consequatur? Ex aut doloremque vel fugit hic, beatae amet. Odit eos consequatur voluptatibus tempore illo incidunt optio maiores provident!.</p>
+            <a href="#"><button>see more..</button></a>
+
+                <img class="img_1" src="./images/starbucks.png" alt="">
+
+                <ul class="thumb">
+                    <li><img class="thumb-1" src="./images/img-3.png" onclick="imgSlider('./images/img-3.png');changeCircleColor('pink')"></li>
+                    <li><img class="thumb-2" src="./images/starbucks.png" onclick="imgSlider('./images/starbucks.png');changeCircleColor('#eb7495')"></li>
+                    <li><img class="thumb-3" src="./images/img-1.png" onclick="imgSlider('./images/img-1.png');changeCircleColor('')"></li>
+                    
+                    <li><img class="thumb-4" src="./images/ice-1.png" onclick="imgSlider('./images/ice-1.png');changeCircleColor('')"></li>
+                    <li><img class="thumb-5" src="./images/ice-2.png" onclick="imgSlider('./images/ice-2.png');changeCircleColor('')"></li>
+                    <li><img class="thumb-6" src="./images/img-2.png" onclick="imgSlider('./images/img-2.png');changeCircleColor('')"></li>
+                </ul>
+                <ul class="icons">
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i>
+                    </li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i>
+                    </li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i>
+                    </li>  
+                </ul>
+            </div>
+    </section>
+    <div class="sec-2">
+
+    </div>
+
+
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.img_1').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function toggleMenu(){
+            let menuToggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu')
+            menuToggle.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
