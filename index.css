@@ -118,7 +118,7 @@ button{
 .thumb li{
     cursor: pointer;
     list-style: none;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 .thumb .thumb-1{
     width: 220%;
@@ -232,7 +232,7 @@ button{
         width: 80%;
     }
     .img_1{
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-right: 320px;
     }
     .circle{
@@ -243,8 +243,8 @@ button{
     }
     .thumb {
         margin-bottom: -200px;
-        width: 70%;
-        margin-left: 30px;
+        width: 80%;
+        margin-left: 90px;
     }
     .icons{
        background: #017143;
@@ -290,7 +290,7 @@ button{
 
 @media (max-width:559px){
     .circle{
-        clip-path: circle(150px at center bottom);
+        clip-path: circle(180px at center bottom);
     }
     .thumb li{
         margin: 15px;
@@ -322,7 +322,7 @@ button{
         width: 100%;
     } */
     .img_1{
-       margin-top: 150px;
+       margin-top: 100px;
     }
     .thumb{
         width: 80%;
@@ -341,37 +341,207 @@ button{
 }
 
 @media (max-width:473px){
+    .bk{
+        height: 130vh;
+    }
+    .circle{
+        margin-top: 30px;
+    }
     .img_1{
         margin-top: 50px;
         margin-right: 180px;
      }
 }
 @media (max-width:443px){
+    .circle{
+        margin-top: 60px;
+    }
     .img_1{
-        margin-top: 50px;
+        margin-top: 40px;
         margin-right: 150px;
+    }
+    .thumb {
+        margin-bottom: -300px;
+    }
+    .thumb li{
+        cursor: pointer;
+        list-style: none;
+        margin-left: 0;
+        width: 10%;
+    }
+    .thumb .thumb-3 {
+        width: 140%;
+    }
+    .thumb-6 {
+        margin-top: 0px;
+        width: 250%;
+    }
+}
+@media (max-width:430px){
+    .img_1{
+        margin-top: -10px;
+    }
+}
+@media (max-width:419px){
+    .circle{
+        margin-top: 60px;
+    }
+    .img_1{
+        margin-top: 10px;
+        margin-right: 150px;
+    }
+    .thumb {
+        margin-bottom: -280px;
+    }
+    .thumb li{
+        cursor: pointer;
+        list-style: none;
+        margin-left: 0;
+        width: 30px;
+    }
+    .thumb .thumb-3 {
+        width: 140%;
+    }
+    .thumb-6 {
+        margin-top: 0px;
+        width: 250%;
     }
 }
 
 @media (max-width:410px){
+    .bk{
+        width: 90%;
+        margin-left: 8px;
+    }
+    .inform_sec h2 {
+        font-size: 1.9rem;
+    }
+    p{
+        width: 90%;
+    }
+    .circle{
+        clip-path: circle(160px at center bottom);
+       }
     .img_1{
-        margin-top: -10px;
+        margin-top: 130px;
         margin-right: 150px;
+    }
+    .thumb li{
+        cursor: pointer;
+        list-style: none;
+        margin-left: 0px;
     }
 }
 
-@media (max-width:280px){
+@media (max-width:404px){
+    .circle{
+        clip-path: circle(190px at center bottom);
+       }
+    .img_1{
+        margin-top: 100px;
+        margin-right: 180px;
+    }
+    .icons{
+        right: 10px;
+    }
+    .thumb{
+        width: 100%;
+    }
+}
+@media (max-width:379px){
+    .img_1{
+        margin-top: 110px;
+        margin-right: 150px;
+    }
+}
+@media (max-width:375px){
+    .circle{
+        clip-path: circle(160px at center bottom);
+       }
+    .img_1{
+        margin-top: 80px;
+    }
+    .icons{
+        right: 10px;
+    }
+}
+
+@media (max-width:364px){
+    .circle{
+        margin-left: 12px;
+    }
+    .img_1{
+        margin-top: 30px;
+        margin-right: 150px;
+    }
+}
+@media (max-width:334px){
+    .circle{
+        margin-top: 70px;
+    }
+    .img_1{
+        margin-top: 30px;
+        margin-right: 120px;
+    }
+    .thumb {
+        margin-bottom: -300px;
+    }
+}
+@media (max-width:314px){
+    .circle{
+        margin-top: 80px;
+    }
+    .bk{
+        height: 130vh;
+    }
+    .thumb {
+        margin-bottom: -320px;
+    }
+}
+@media (max-width:290px){
     .bk{
         width: 100%;
-    }   
-.circle{
-    clip-path: circle(120px at center bottom);
-   }
+    } 
+    .thumb {
+        margin-left: 10px;
+    }
+    .circle{
+        margin-left: 20px;
+    }
+}
+@media (max-width:280px){
+    /* .bk{
+        width: 100%;
+    }    */
+    .img_1{
+        margin-top: 70px;
+    }
+    span{
+        font-size: 2.2rem;
+    }
    .thumb {
-    width: 320px;
+    width: 250px;
    }
-   .thumb .thumb-4{
-   /* display: block; */
-   flex-direction: column;
-  }
+}
+@media (max-width:260px){
+    .img_1{
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:257px){
+    .img_1{
+        margin-top: 10px;
+    }
+}
+@media (max-width:235px){
+    .circle{
+        margin-top: 150px;
+    }
+    .img_1{
+        margin-top: 80px;
+    }
+     .thumb {
+        margin-bottom: -360px;
+    }
 }
