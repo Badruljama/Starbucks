@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
@@ -18,7 +17,6 @@
                 <div class="nav">
                 <img class="logo" src="./images/starbucks-logo.png" alt="">
                 <div class="toggle" onclick="toggleMenu();"></div>
-                <!-- <div class="close" onclick="toggleMenu()"></div> -->
                 <ul class="menu-sec">
                     <li class="grn">Home</li>
                     <li class="hvr">Menu</li>
@@ -37,8 +35,8 @@
                 <ul class="thumb">
                     <li><img class="thumb-1" src="./images/img-3.png" onclick="imgSlider('./images/img-3.png');changeCircleColor('pink')"></li>
                     <li><img class="thumb-2" src="./images/starbucks.png" onclick="imgSlider('./images/starbucks.png');changeCircleColor('#eb7495')"></li>
-                    <li><img class="thumb-3" src="./images/img-1.png" onclick="imgSlider('./images/img-1.png');changeCircleColor('')">
-                    </li> 
+                    <li><img class="thumb-3" src="./images/img-1.png" onclick="imgSlider('./images/img-1.png');changeCircleColor('')"></li>
+                    
                     <li><img class="thumb-4" src="./images/ice-1.png" onclick="imgSlider('./images/ice-1.png');changeCircleColor('')"></li>
                     <li><img class="thumb-5" src="./images/ice-2.png" onclick="imgSlider('./images/ice-2.png');changeCircleColor('')"></li>
                     <li><img class="thumb-6" src="./images/img-2.png" onclick="imgSlider('./images/img-2.png');changeCircleColor('')"></li>
@@ -54,7 +52,24 @@
             </div>
     </section>
     <div class="sec-2">
+
     </div>
-    <script src="apps.js"></script>
+
+
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.img_1').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function toggleMenu(){
+            let menuToggle = document.querySelector('.toggle');
+            let menu = document.querySelector('.menu-sec');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        };
+    </script>
 </body>
 </html>
