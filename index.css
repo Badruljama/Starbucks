@@ -183,7 +183,7 @@ button{
         width: 30px;
         height: 30px;
         cursor: pointer;
-        background: url(../images/menu-1.png);
+        background: url(./images/menu-1.png);
         background-size: 30px;
         background-position: center;
         background-repeat: no-repeat;
@@ -192,7 +192,7 @@ button{
         right: 30px;
     }
     .toggle.active{
-        background: url(../images/close-1.png);
+        background: url(./images/close-1.png);
         background-size: 35px;
         background-position: center;
         background-repeat: no-repeat;
